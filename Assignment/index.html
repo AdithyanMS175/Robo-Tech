@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><path fill='white' d='M352 64C352 46.3 337.7 32 320 32C302.3 32 288 46.3 288 64L288 128L192 128C139 128 96 171 96 224L96 448C96 501 139 544 192 544L448 544C501 544 544 501 544 448L544 224C544 171 501 128 448 128L352 128L352 64zM160 432C160 418.7 170.7 408 184 408L216 408C229.3 408 240 418.7 240 432C240 445.3 229.3 456 216 456L184 456C170.7 456 160 445.3 160 432zM280 432C280 418.7 290.7 408 304 408L336 408C349.3 408 360 418.7 360 432C360 445.3 349.3 456 336 456L304 456C290.7 456 280 445.3 280 432zM400 432C400 418.7 410.7 408 424 408L456 408C469.3 408 480 418.7 480 432C480 445.3 469.3 456 456 456L424 456C410.7 456 400 445.3 400 432zM224 240C250.5 240 272 261.5 272 288C272 314.5 250.5 336 224 336C197.5 336 176 314.5 176 288C176 261.5 197.5 240 224 240zM368 288C368 261.5 389.5 240 416 240C442.5 240 464 261.5 464 288C464 314.5 442.5 336 416 336C389.5 336 368 314.5 368 288zM64 288C64 270.3 49.7 256 32 256C14.3 256 0 270.3 0 288L0 384C0 401.7 14.3 416 32 416C49.7 416 64 401.7 64 384L64 288zM608 256C590.3 256 576 270.3 576 288L576 384C576 401.7 590.3 416 608 416C625.7 416 640 401.7 640 384L640 288C640 270.3 625.7 256 608 256z'/></svg>">
+  <title>Robo-Tech</title>
+</head>
+
+<body class="">
+  <div class="bg-[#101b21]">
+    <nav class=" text-white bg-gray-900">
+      <div class="hidden lg:flex flex-row justify-between p-4 mx-5 ">
+        <h2 class="logo text-xl font-bold flex items-center hover:cursor-pointer">
+          <i class="fa-solid fa-robot text-4xl"></i> &nbsp; RoboTech
+        </h2>
+        <ul class="list flex items-center">
+          <li class="links mx-3 hover:text-[#13a4ec]"><a href="">Home</a> </li>
+          <li class="links mx-3 hover:text-[#13a4ec]"><a href="">Robots</a></li>
+          <li class="links mx-3 hover:text-[#13a4ec]"><a href="">Solutions</a></li>
+          <li class="links mx-3 hover:text-[#13a4ec]"><a href="">Support</a></li>
+          <li class="links mx-3 hover:text-[#13a4ec]"><a href="">Company</a></li>
+        </ul>
+        <div class="">
+          <button
+            class="bg-[#11455d] mx-3 p-2 rounded-xl border-white-500 hover:cursor-pointer hover:bg-[#103f57] hover:text-[#13a4ec]">Log
+            in</button>
+          <button
+            class="bg-[#11455d] mx-3 p-2 rounded-xl border-white-500 hover:cursor-pointer hover:bg-[#103f57] hover:text-[#13a4ec]"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+
+
+      <div class="lg:hidden group relative flex justify-between items-center p-4  bg-gray-900 text-white">
+        <h2 class="logo text-xl font-bold flex items-center hover:cursor-pointer">
+          <i class="fa-solid fa-robot text-4xl"></i> &nbsp; RoboTech
+        </h2>
+
+        <div class="relative w-8 h-8 flex items-center justify-center z-20">
+          <i class="fa-solid fa-bars text-3xl"></i>
+          <input class="absolute w-full h-full top-0 left-0 opacity-0 cursor-pointer z-10" type="checkbox" name=""
+            id="check">
+        </div>
+
+        <div
+          class="hidden group-has-[:checked]:flex flex-col items-center absolute top-full left-0 w-full bg-gray-900 z-10 p-5">
+          <ul class="list flex flex-col items-center text-center w-full">
+            <li class="links w-full py-2 hover:text-[#13a4ec]"><a href="">Home</a></li>
+            <li class="links w-full py-2 hover:text-[#13a4ec]"><a href="">Robots</a></li>
+            <li class="links w-full py-2 hover:text-[#13a4ec]"><a href="">Solutions</a></li>
+            <li class="links w-full py-2 hover:text-[#13a4ec]"><a href="">Support</a></li>
+            <li class="links w-full py-2 hover:text-[#13a4ec]"><a href="">Company</a></li>
+          </ul>
+          <div class="flex flex-col w-full items-center mt-4 pt-4 border-t border-gray-700">
+            <button class="bg-[#11455d] my-1 p-2 rounded-xl w-4/5 hover:bg-[#103f57] hover:text-[#13a4ec]">
+              Log in
+            </button>
+            <button class="bg-[#11455d] my-1 p-2 rounded-xl w-4/5 hover:bg-[#103f57] hover:text-[#13a4ec]">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </nav>
+
+    <section class="relative h-[91vh] w-full overflow-hidden">
+
+      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline>
+        <source src="./assets/168502-839220724.mp4" type="video/mp4">
+      </video>
+
+
+      <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent"></div>
+
+
+      <div class="relative flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold">The Future of Robotics is Here</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl">
+          Explore our cutting-edge humanoid and industrial robots, designed to revolutionize industries and enhance
+          human capabilities.
+        </p>
+        <button class="mt-6 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-medium hover:cursor-pointer">
+          Shop Now
+        </button>
+      </div>
+    </section>
+    <section class="min-h-screen">
+      <h2 class="text-4xl font-bold pt-10 text-center text-white h-[100px]">About Our Robots</h2>
+
+      <div class="flex flex-col items-center gap-12 p-8 md:flex-row md:justify-around md:items-start">
+
+        <div
+          class="text-center  transform transition-transform duration-500 ease-out hover:-translate-y-4 hover:cursor-pointer flex flex-col justify-center items-center">
+          <img class="w-[300px] rounded-2xl "
+            src="https://imgcdn.stablediffusionweb.com/2024/11/21/2fa53b24-7978-4af7-b39a-ae4f6b2bfc40.jpg"
+            alt="Humanoid Robot">
+          <h3 class="text-2xl text-white mt-4 ">Humanoid Robots</h3>
+          <p class="text-slate-500">Advanced Human-like robots for complex tasks.</p>
+        </div>
+
+        <div
+          class="text-center  transform transition-transform duration-500 ease-out hover:-translate-y-4 hover:cursor-pointer flex flex-col justify-center items-center">
+          <img class="w-[300px] rounded-2xl"
+            src="https://st.depositphotos.com/3258217/4343/i/950/depositphotos_43433305-stock-photo-industrial-robot.jpg"
+            alt="Industrial Robot">
+          <h3 class="text-2xl text-white mt-4">Industrial Robots</h3>
+          <p class="text-slate-500">High-precision industrial robot arm for automation.</p>
+        </div>
+
+        <div
+          class="text-center  transform transition-transform duration-500 ease-out hover:-translate-y-4 hover:cursor-pointer flex flex-col justify-center items-center">
+          <img class="w-[300px] rounded-2xl"
+            src="https://i.pinimg.com/originals/d6/c1/d4/d6c1d42cca504b2a9abb925ce61bec0d.jpg" alt="Service Robot">
+          <h3 class="text-2xl text-white mt-4">Service Robots</h3>
+          <p class="text-slate-500">Next-gen service robot with enhanced interaction.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="min-h-screen">
+      <h2 class="text-4xl font-bold pt-10 text-center text-white h-[100px]">Featured Products</h2>
+
+      <div class="flex flex-col items-center gap-12 p-8 md:flex-row md:justify-around md:items-start">
+
+        <div
+          class="text-center  transform transition-transform duration-500 ease-out hover:-translate-y-4 hover:cursor-pointer flex flex-col justify-center items-center">
+          <img class="w-[300px] h-[300px] rounded-2xl object-cover"
+            src="https://cdnb.artstation.com/p/assets/images/images/051/499/145/large/mehul-pandey-front-render.jpg?1657463925"
+            alt="Robot Model x500">
+          <h3 class="text-2xl text-white mt-4">Robot Model x500</h3>
+          <p class="text-slate-500">Advanced Human-like robots.</p>
+        </div>
+
+        <div
+          class="text-center  transform transition-transform duration-500 ease-out hover:-translate-y-4  hover:cursor-pointer flex flex-col justify-center items-center">
+          <img class="w-[300px] h-[300px] rounded-2xl object-cover"
+            src="https://tse3.mm.bing.net/th/id/OIP.fUlF-FGsYvu36qBZccEH_wHaIC?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="ArmTech 3000">
+          <h3 class="text-2xl text-white mt-4">ArmTech 3000</h3>
+          <p class="text-slate-500">High-precision industrial arms.</p>
+        </div>
+
+        <div
+          class="text-center  transform transition-transform duration-500 ease-out hover:-translate-y-4 hover:cursor-pointer flex flex-col justify-center items-center">
+          <img class="w-[300px] h-[300px] rounded-2xl object-cover"
+            src="https://tse1.mm.bing.net/th/id/OIP.CCFH2Fyix2y09Zv73DQUMgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Assist Bot 2.0">
+          <h3 class="text-2xl text-white mt-4">Assist Bot 2.0</h3>
+          <p class="text-slate-500">Next-gen service and support bots.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <footer class="bg-gray-900 text-white border-t border-gray-800">
+      <div class="container mx-auto px-6 py-12">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+
+          <a href="" class="sm:col-span-2 md:col-span-1">
+            <h2 class="text-xl font-bold flex items-center mb-4">
+              <i class="fa-solid fa-robot text-3xl"></i> &nbsp; RoboTech
+            </h2>
+            <p class="text-slate-400 pr-4">
+              Pioneering the future of automation and robotics for a better world.
+            </p>
+          </a>
+
+          <div>
+            <h3 class="font-semibold mb-4 tracking-wider uppercase">Products</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Humanoid Robots</a></li>
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Industrial Robots</a></li>
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Service Robots</a></li>
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Solutions</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4 tracking-wider uppercase">Company</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">About Us</a></li>
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Careers</a></li>
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Support</a></li>
+              <li><a href="#" class="text-slate-400 hover:text-[#13a4ec]">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4 tracking-wider uppercase">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" aria-label="Twitter" class="text-slate-400 hover:text-[#13a4ec] text-2xl"><i
+                  class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn" class="text-slate-400 hover:text-[#13a4ec] text-2xl"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="YouTube" class="text-slate-400 hover:text-[#13a4ec] text-2xl"><i
+                  class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="GitHub" class="text-slate-400 hover:text-[#13a4ec] text-2xl"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 pt-6 text-center text-slate-500 text-sm">
+          <p>&copy; 2025 RoboTech. Created by Adithyan M S</p>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+
+</body>
+
+</html>
