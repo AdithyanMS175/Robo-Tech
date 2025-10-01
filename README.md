@@ -26,22 +26,19 @@ Tailwind CSS
 
 📂 Project Structure
 robot-store/
-│── index.html
-│── style.css
-│── /assets
-│    ├── robot1.png
-│    ├── robot2.png
-│    └── ...
+│── Assignment
+     │── index.html
+     │── /assets
+     │    ├── ...
+     │    
 
-📸 Preview
 
-(Add screenshots or demo GIF here)
 
 🔧 Getting Started
 
 Clone the repository:
 
-git clone https://github.com/your-username/robot-store.git
+git clone https://github.com/AdithyanMS175/Robot-Tech.git
 
 
 Open index.html in your browser.
